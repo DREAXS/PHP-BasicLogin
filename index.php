@@ -23,8 +23,8 @@
             margin: 5px;
         }
         .buton:hover {
-            background-color: #cdc1c5; /* Buton hover arka plan rengi */
-            color: #ffffff; /* Buton hover yazı rengi */
+            background-color: #cdc1c5; /* Buton  arka plan rengi */
+            color: #ffffff; /* Buton  yazı rengi */
             font-weight: bold;
             font-style: italic;
         }
@@ -105,7 +105,7 @@
             if ($ad == "user" && $sifre == "password" && $gkod == $dogru_gkod) {
                 $_SESSION['adi'] = $ad;
                 $_SESSION['sifre'] = $sifre;
-                header("Location: anasayfa.php");
+                header("Location: main.php");
                 exit; // Yönlendirme sonrası işlemi durdurmak için exit kullanıyoruz.
             } else {
                 echo '<script type="text/javascript">document.getElementById("error-message").classList.add("show");</script>';
